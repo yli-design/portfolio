@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #fff; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: url("../img/fg.jpg");
+  background-position: center;
+  background-size: cover; */
+  /* border: 2px dashed pink; */
+  /* background-color:rgba(144, 238, 144,.5); */
+  /* background-color: rgba(0,0,0,.5); */
+/*   background-image: linear-gradient(rgba(144, 238, 144,.5), rgb(0,0,0,0.5)); */
+
+
+}
+body.home{
+  background-color:rgba(144, 238, 144,.5);
+
+}
+
+/* html{
+  background-image: linear-gradient(rgba(144, 238, 144,.5), rgb(0,0,0,0.5));
+} */
+/* HEADER */
+
+header {
+  /* background-color: rgba(0,0,0,.8); */
+  background-color:rgba(144, 238, 144,.8);
+ /* background: linear-gradient(white, black) no-repeat; */
+font-size: 20px;
+  padding: 9px;
+  text-align:center;
+margin: 0;
+font-family: 'Poiret One', cursive;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+font-size: 20px;
+  padding-left: 80px;
+ font-weight: bold;
+
+}
+
+p.text{
+
+  margin-left: auto;
+   margin-right: auto;
+   width:50%;
+
+
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+  list-style-type:none;
+    /* display: list-item; */
+    line-height: 10px;
+    padding: 0px 100px 0px 0px;
+
+
+}
+ .bg {
+  /* background: white; */
+   /* background-color: rgba(255, 255, 255); */
+   /* border-radius: 20px; */
+   padding: 30px;
+   display: flex;
+   align-items: flex-start;
+  text-align: center;
+}
+ .bg-pic{
+height: 600px;
+  width: 35vw;
+/* margin-right: 4.5em; */
+padding-left: 20px;
+}
+
+ .body{
+  flex:1;
+}
+/*
+.bg-heading{
+
+    margin: 10px 0 ;
+
+} */
+p.center{
+   text-align: center;
+   line-height: 40px;
+text-indent: 60px;
+}
+
+.box {
+   display: flex;
+   justify-content:  center;
+  align-items: center;
+     flex-direction: column;
+  /* background-color: white; */
+  margin: auto ;
+/* margin:auto; */
+  text-align: center;
+    /* align-content: center; */
+  line-height: 30px;
+ padding: 30px;
+/* border: 2px dashed pink; */
+width: 80%;
+
+}
+a.lightbox img {
+/* height: 150px; */
+align-content: center;
+width: 300px;
+margin: 0px;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+/* margin: 94px 20px 20px 20px; */
+}
+.image-title{
+
+     }
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 50%;
+background: rgba(0,0,0,.7);
+/* width: 100%; */
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+.lightbox .content {
+    display:block;
+    position:relative;
+    }
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+/* .lightbox-target video {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+} */
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+.lightbox-target:target video {
+max-height: 100%;
+max-width: 100%;
+}
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+video{
+  width: 500px;
+  height: 300px;
+
+}
+
+ol.content {
+  list-style-type: upper-roman;
+   text-align: center;
+   line-height: 1.6;
+   color:white;
+}
+
+.frame{
+position:fixed;
+    padding:0;
+    margin:0;
+
+/*     top:0;
+    left:0; */
+
+    width: 80%;
+    height: 80%;
+
+      align-items: center;
+justify-content: center;
+
+/*   border: 2px solid #333; */
+
+
+  background: rgba(0,0,0,.5);
+}
+img{
+  align-content: center;
+  width: 300px;
+  margin: 0px;
+  /* border: solid 5px gray; */
+}
+.box.selected{
+   align-items: stretch;
+}
+.box.selected.img{
+   width:500px;
+   height: 300px;
+}
+a.one:visited{
+  color:lightblue;
+}
+
+a.one:link{
+    text-decoration: none;
+color:lightblue;
+  font-size: 25px;
+}
